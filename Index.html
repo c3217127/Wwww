@@ -3,19 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Design Practice</title>
+    <title>Responsive Design with Action</title>
     <link rel="stylesheet" href="style.css">
     <html>
+        <style>
+            body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+            }
+            header,footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            }
+            .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, aireax(300px,1fr));
+            gap: 20px;
+            padding: 20px;
+            }
+            
+            
+            .section {
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0,0,1);
+            border-radius: 10px;
+            }
+            .section1 {
+            background-color: #e6f7ff;
+            }
+            .section2 {
+            background-color: #fff2e6;
+            
+            
+            }
+            .section3 {
+            background-color: #f9e6ff;
+            }
+            .section4 {
+            background-color:#e6ffe6;
+            }
+            img {
+            max-width: 100px;
+            height: auto;
+            border-radius: 5px;
+            }
+            .button {
+            display: inline-block;
+            background-color: #4caf50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            }
+            .section2 .button {
+            background-color: #ff6347;
+            }
+            .section3 .button {
+            background-color: #2196f3;
+            
+            .section4 .button {
+            background-color: #ffc107;
+            }
+            @media (max-width: 768px) {
+            .container {
+            grid-template-columns: 1fr;
+            }
+            }
+            </style>
+ <script>
+    function showAlert() {
+    alert("button clicked!")
+    }
+    </script>
+    <head>
     <body>
-
-
-
-
-
-      
-
-      
-
-        
+    <header>
+    <h1>Responsive Design With Action</h1>
+    </header>
+    <div class="container">
+    <div class="section section1">
+    <h2>Section 1</h2>
+    <p>This is the frist section.It has a light blue<br>background,padding,margin,and
+    a box <br>shadow.The layout adjust Responsively to <br>different screen size.</p>
+    <img src="section1.jpg" alt="image for section 1">
+    <button class="button"onclick="showAlert()">click me</button>
+    
+    <div class="section section2">
+    <h2>Section 2</h2>
+    <p>This is a second section.It has a light<br>orange background,padding,margin, and a<br>box shadow.
+    The layout adjust Responsively<br>to different screen sizes.</p>
+    <img src="section2.jpg" alt="image for section 2">
+    <button class="button"onclick="showAlert()">click me</button>
+    
+    </div>
+    <div class="section section3">
+    <h2>Section 3</h2>
+    <P>This is the third section.It has a light purpule<br> background,padding,margin,and a box<br> shadow.
+    The layout adjust Responsively to <br> different screen sizes.</P>
+    <img src="section3.jpg" alt="image for section3">
+    <button class="button" onclick="showAlert()">click me</button>
+    </div>
+    <div class="section section4">
+    <h2>Section 4</h2>
+    <p>This is the fourth section.It has a light green<br>
+    background,padding,margin, and a box<br>shadow.The layout adjust Responsively to <br>
+    different screen sizes.</p>
+    <img src="section4.jpg" alt="image for section4">
+    <button class="button" onclick="showAlert()">click me</button>
+    </div>
+    </div>
+    <footer>
+    <P>&copf; 2024 advanced Responsive Design Practice </P>
+    </footer>
+    
     </body>
+
     </html>
+
+
